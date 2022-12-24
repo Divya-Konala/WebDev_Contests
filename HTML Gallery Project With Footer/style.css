@@ -1,0 +1,506 @@
+/* -------------------header -------------------------- */
+header{
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+header a{
+    color: #fff!important;
+}
+.nav-item>button{
+    border: none;
+}
+.navbar-collapse>ul{
+    gap: 30px;
+    font-size: 1.75rem!important;
+}
+.navbar-brand{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem!important;
+    margin: 0 30px;
+}
+.container-fluid{
+    gap: 100px;
+}
+/* -------------------main-------------------- */
+main{
+    margin-top: 120px;
+}
+.card>img{
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-color: grey;
+}
+.viewOredit{
+    font-size: 0;
+}
+.viewOredit a{
+    color: grey;
+}
+.view{
+    border-top-right-radius: 0px!important;
+    border-bottom-right-radius: 0px!important;
+    border: 1px solid grey!important;
+}
+.edit{
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    border: 1px solid grey!important;
+}
+.buttonsAndTime{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+}
+main .row{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3,33%);
+    row-gap: 10px;
+}.col{
+    height: fit-content;
+}
+/* --------------------footer--------------------- */
+footer{
+    margin: 30px 0 0;
+    background-color: #0d6efd;
+    color: #fff;
+}
+.footer_div{
+    margin: 0 50px;
+}
+.footer_top{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.footer_top>img{
+    margin: 0 10px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.footer_main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 100px;
+}
+.footer_main img{
+    border-radius: 100%;
+    padding-right: 25px;
+}
+.footer_main .dev_details{
+    padding-left: 25px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.footer_bottom{
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+}
+.footer_bottom .dev_desc{
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 7px;
+}
+@media screen and (max-width:1218px) and (max-width:1217px){
+    .footer_main .dev_details{
+        padding-left: 15px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .footer_main img{
+        width: 400px;
+    }
+    .footer_bottom .dev_desc{
+        font-size: 20px;
+        word-spacing: normal;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1218px){
+    .footer_main .dev_details{
+        padding-left: 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .footer_main img{
+        width: 350px;
+    }
+    .footer_bottom .dev_desc{
+        font-size: 18px;
+        word-spacing: normal;
+    }
+}
+@media screen and (min-width:650px) and (max-width:992px){
+    /* -----------header----------- */
+    .navbar-brand{
+        font-size: 1.5rem!important;
+        margin: 0 30px;
+    }
+    .container-fluid{
+        gap: 0px!important;
+    }
+    .navbar-collapse>ul{
+        gap: 5px;
+        font-size: 1.2rem!important;
+    }
+    /* ------------main----------- */
+    main{
+        margin-top:90px;
+    }
+    main>h1{
+        font-size: 25px;
+    }
+    main .row{
+        grid-template-columns: repeat(2,50%);
+        row-gap: 20px;
+    }
+    .card>img{
+        height: 200px;
+    }
+    .col{
+        height: 350px;
+    }
+    .card-text{
+        font-size: 14px;
+    }
+    .view .edit .time{
+        font-size: 0.85rem!important;
+    }
+    /* ---------------footer--------------- */
+    footer{
+        margin-top: 50px;
+    }
+    .footer_main .dev_details{
+        padding-left: 10px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .footer_main img{
+        width: 300px;
+        padding-right: 0;
+    }
+    .footer_bottom .dev_desc{
+        font-size: 15px;
+        word-spacing: normal;
+    }
+    .footer_top{
+        padding: 10px 0;
+        margin-right: 0px;
+    }
+    .footer_top>img{
+        margin: 0;
+        width: 150px;
+    }
+    .footer_main{
+        padding: 20px 20px;
+    }
+}
+@media screen and (min-width:480px) and (max-width:650px){
+    /* -----------header----------- */
+    .navbar-brand{
+        font-size: 1rem!important;
+        margin: 0 30px;
+    }
+    .container-fluid{
+        gap: 0px!important;
+    }
+    .navbar-collapse>ul{
+        gap: 4px;
+        font-size: 1rem!important;
+    }
+    /* ------------main----------- */
+    main{
+        margin-top:70px;
+    }
+    main>h1{
+        font-size: 18px;
+    }
+    main .row{
+        grid-template-columns: repeat(2,50%);
+        row-gap: 20px;
+        justify-content: center;
+    }
+    .col{
+        height: fit-content;
+        width: 150px;
+    }
+    .card>img{
+        height: 200px;
+    }
+    .card-text{
+        font-size: 13px;
+    }
+    .view .edit .time{
+        font-size: 0.5rem!important;
+    }
+    .btn{
+        padding: 5px!important;
+    }
+    /* --------------footer------------- */
+    .footer_main .dev_details{
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .footer_main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer_main img{
+        width: 200px;
+        padding-right: 0;
+    }
+    .footer_bottom .dev_desc{
+        font-size: 12px;
+        word-spacing: normal;
+    }
+    .footer_top{
+        padding: 10px 0;
+        margin-right: 0px;
+    }
+    .footer_top>img{
+        margin: 0;
+        width: 100px;
+    }
+    .footer_main{
+        padding: 20px 20px;
+    }
+}
+@media screen and (min-width:400px) and (max-width:480px){
+    /* -----------header----------- */
+    .navbar-brand{
+        font-size: 1rem!important;
+        margin: 0 30px;
+    }
+    .container-fluid{
+        gap: 0px!important;
+    }
+    .navbar-collapse>ul{
+        gap: 4px;
+        font-size: 1rem!important;
+    }
+    /* ------------main----------- */
+    main{
+        margin-top:70px;
+    }
+    main>h1{
+        font-size: 18px;
+    }
+    main .row{
+        grid-template-columns: repeat(1,100%);
+        row-gap: 20px;
+        justify-content: center;
+    }
+    .col{
+        height: fit-content;
+        width: 150px;
+    }
+    .card>img{
+        height: 200px;
+    }
+    .card-text{
+        font-size: 13px;
+    }
+    .view .edit .time{
+        font-size: 0.5rem!important;
+    }
+    /* --------------footer------------- */
+    .footer_main .dev_details{
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .footer_main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer_main img{
+        width: 200px;
+        padding-right: 0;
+    }
+    .footer_bottom .dev_desc{
+        font-size: 12px;
+        word-spacing: normal;
+    }
+    .footer_top{
+        padding: 10px 0;
+        margin-right: 0px;
+    }
+    .footer_top>img{
+        margin: 0;
+        width: 100px;
+    }
+    .footer_main{
+        padding: 20px 20px;
+    }
+}
+@media screen and (min-width:330px) and (max-width:400px){
+     /* -----------header----------- */
+     .navbar-brand{
+        font-size: 0.85rem!important;
+        margin: 0px;
+    }
+    .container-fluid{
+        gap: 0px!important;
+    }
+    .navbar-collapse>ul{
+        gap: 4px;
+        font-size: 1rem!important;
+    }
+    /* ------------main----------- */
+    main{
+        margin-top:70px;
+    }
+    main>h1{
+        font-size: 16px;
+    }
+    main .row{
+        grid-template-columns: repeat(1,100%);
+        row-gap: 20px;
+        justify-content: center;
+    }
+    .col{
+        height: 330px;
+        width: 150px;
+    }
+    .card>img{
+        height: 200px;
+    }
+    .card-text{
+        font-size: 13px;
+    }
+    .view .edit .time{
+        font-size: 0.5rem!important;
+    }
+     /* --------------footer------------- */
+     footer{
+        margin-top: 50px;
+     }
+     .footer_main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+     .footer_main .dev_details{
+        padding-left: 10px;
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .footer_main img{
+        width: 100px;
+        padding-right: 0;
+    }
+    .footer_bottom .dev_desc{
+        font-size: 10px;
+        word-spacing: normal;
+    }
+    .footer_top{
+        padding: 10px 0;
+        margin-right: 0px;
+    }
+    .footer_top>img{
+        margin: 0;
+        width: 75px;
+    }
+    .footer_main{
+        padding: 20px 20px;
+    }
+}
+@media screen and (min-width:270px)and (max-width:331px){
+    /* -----------header----------- */
+    .navbar-brand{
+        font-size: 0.85rem!important;
+        margin: 0px;
+    }
+    .navbar-collapse>ul{
+        gap: 4px;
+        font-size: 1rem!important;
+    }
+    .container-fluid{
+        padding: 0 10px!important;
+        gap: 0px!important;
+    }
+    /* .navbar-toggler{
+        margin: 0 0 0 -40px;
+        padding: 0px!important;
+    } */
+    /* ------------main----------- */
+    main{
+        margin:70px 0px 0px;
+    }
+    main>h1{
+        font-size: 16px;
+    }
+    main .row{
+        grid-template-columns: repeat(1,100%);
+        row-gap: 10px;
+        justify-content: center;
+    }
+    .col{
+        width: 200px;
+        height: fit-content;
+    }
+    .card>img{
+        height: 190px;
+    }
+    .card-text{
+        font-size: 13px;
+    }
+    .view .edit .time{
+        font-size: 0.5rem!important;
+    }
+    .btn{
+        padding: 2px!important;
+    }
+    /* --------------footer------------- */
+    footer{
+        margin:30px 0px 0px 0px;
+     }
+    .footer_main{
+        padding: 20px 0;
+     }
+     .footer_main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+     .footer_main .dev_details{
+        padding-left: 10px;
+        font-size: 9px;
+        font-weight: 500;
+    }
+    .footer_main img{
+        width: 70px;
+        padding-right: 0;
+    }
+    .footer_bottom .dev_desc{
+        font-size: 8px;
+        word-spacing: normal;
+    }
+    .footer_top{
+        padding: 10px 0;
+        margin-right: 0px;
+    }
+    .footer_top>img{
+        margin: 0;
+        width: 75px;
+    }
+}
