@@ -195,7 +195,7 @@ footer{
         height: 200px;
     }
     .col{
-        height: fit-content;
+        height: fit-content
     }
     .card-text{
         font-size: 14px;

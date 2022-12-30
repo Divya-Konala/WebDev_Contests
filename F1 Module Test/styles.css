@@ -1,0 +1,422 @@
+body{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* -----------header-------------- */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+nav{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    background-color: black;
+}
+.businesslogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-collapse{
+    justify-content: right;
+}
+.nav-item{
+    padding: 0 10px;
+}
+/* -------------footer------------- */
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+}
+.footer_form{
+    display: flex;
+}
+.form_outer_div{
+    margin: 50px auto 100px;
+    width: 75%;
+}
+.form_outer_div h1{
+    text-align: center;
+    font-weight: 700;
+}
+.form_inner_div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+footer input{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 100%;
+    height: 50px;
+}
+footer form .submit_btn{
+    background-color: white;
+    color: black;
+    width:160px;
+    height:50px;
+}
+@media screen and (max-width:380px){
+    /* ------------footer---------------- */
+    footer input{
+        height: 30px;
+    }
+    footer form .submit_btn{
+        width:100px;
+        height:30px;
+    }
+}
+/* -------------banner section-------------- */
+.banner{
+    background-color: black;
+    color: white;
+    padding: 100px 15% 70px;
+    display: flex;
+    flex-direction: column;justify-content: center;
+}
+.down_arrow{
+    text-align: center;
+    padding: 10px;
+}
+.down_arrow a{
+    text-decoration: none;
+    color: white;
+}
+.banner_heading_img{
+    display: flex;
+}
+.banner_heading_img .heading{
+    width: 60%;
+    margin-right: 0px;
+}
+.banner_heading_img .heading h1{
+    font-size:120px;
+    animation: fadeIn 2s ease-in-out 1 ;
+}
+@keyframes fadeIn{
+    0% {
+      opacity:0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity:1;
+      transform: translateY(0px);
+    }
+  }
+.banner_heading_img .banner_img{
+    width: 50%;
+    position: relative;
+}
+.banner_heading_img .banner_img img{
+    width: 110%;
+    margin: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+@media screen and (min-width:1264px) and (max-width:1400px){
+    /* -------------banner-------------- */
+    .banner_heading_img .heading h1 {
+        font-size: 100px;
+    }
+}
+@media screen and (min-width:850px) and (max-width:1264px){
+    /* -------------banner-------------- */
+    .banner_heading_img .heading h1 {
+        font-size: 80px;
+    }
+}
+@media screen and (min-width:767px) and (max-width:850px){
+    /* ------------banner---------------- */
+    .banner_heading_img .heading h1 {
+        font-size: 60px;
+    }
+}
+@media screen  and (min-width:560px) and (max-width:767px){
+    /* ------------banner---------------- */
+    .banner_heading_img .heading h1 {
+        font-size: 40px;
+    }
+}
+@media screen  and (min-width:450px) and (max-width:560px){
+    /* ------------banner---------------- */
+    .banner_heading_img .heading h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:450px){
+    /* ------------banner---------------- */
+    .banner_heading_img .heading h1 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:767px){
+    /* ------------banner---------------- */
+    .banner{
+        padding: 100px 10% 40px;
+    }
+    .banner_heading_img {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner_heading_img .banner_img{
+        width: 100%;
+    }
+    .banner_heading_img .heading{
+        width: 100%;
+    }
+    .banner_heading_img .banner_img img{
+        width: 100%;
+        position: static;
+    }
+}
+/* -----------------About Us Section-------------- */
+.aboutUs_row{
+    display: flex;
+    margin: 100px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutUs_pic{
+    width: 30%;
+}
+.aboutUs_pic img{
+    width: 100%;
+}
+.aboutUs_text h1{
+    color: black;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.aboutUs_text p{
+    font-size: 20px;
+}
+.aboutUs_text{
+    width: 60%;
+}
+@media screen and (min-width:1290px) and (max-width:1350px){
+    /* ------------About Us Section---------------- */
+    .aboutUs_row{
+        align-items: center;
+    }
+}
+@media screen and (min-width:1110px) and (max-width:1290px){
+    /* ------------About Us Section---------------- */
+    .aboutUs_row{
+        margin: 100px 70px;
+    }
+    .aboutUs_text h1{
+        margin-bottom: 30px;
+    }
+    .aboutUs_row{
+        align-items: center;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1110px){
+    /* ------------About Us Section---------------- */
+    .aboutUs_row{
+        margin: 100px 70px;
+    }
+    .aboutUs_text h1{
+        margin-bottom: 20px;
+    }
+    .aboutUs_row{
+        align-items: center;
+    }
+}
+@media screen and (min-width:767px) and (max-width:960px){
+    /* ------------About Us Section---------------- */
+    .aboutUs_pic{
+        width: 40%;
+        padding: 0 30px 0 0;
+    }
+    .aboutUs_row{
+        margin: 80px 50px;
+    }
+    .aboutUs_text h1{
+        margin-bottom: 20px;
+    }
+    .aboutUs_row{
+        align-items: center;
+    }
+}
+@media screen  and (max-width:767px){
+    /* ------------About Us Section---------------- */
+    .aboutUs_row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .aboutUs_row{
+        display: block;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .aboutUs_text h1{
+        margin-bottom: auto;
+    }
+    .aboutUs_text{
+        width: 100%;
+    }
+}
+@media screen  and (min-width:600px) and (max-width:767px){
+    .aboutUs_text h1{
+        padding-bottom: 15px;
+    }
+    .aboutUs_text p{
+        padding: 0 70px;
+    }
+    .aboutUs_pic{
+        margin: 0 auto;
+        padding: 20px;
+        width: 50%;
+    }
+}
+@media screen and (min-width:460px) and (max-width:600px){
+     /* ------------About Us Section---------------- */
+    .aboutUs_text h1{
+        padding-bottom: 10px;
+    }
+    .aboutUs_text p{
+        padding: 0 70px;
+    }
+    .aboutUs_pic{
+        margin: 0 auto;
+        padding: 20px;
+        width: 60%;
+    }
+}
+@media screen  and (max-width:460px){
+    /* ------------About Us Section---------------- */
+   .aboutUs_text h1{
+       padding-bottom: 10px;
+   }
+   .aboutUs_text p{
+       padding: 0 50px;
+   }
+   .aboutUs_pic{
+       margin: 0 auto;
+       padding: 20px;
+       width: 80%;
+   }
+}
+/* --------------Our Services Section----------------- */
+.ourServices_div{
+    margin: 100px 100px;
+    color: black;
+}
+.services_div{
+    overflow-x: auto;
+}
+.cards_div{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+}
+.services{
+    width: 75%;
+    min-width: 423px;
+    margin: 0 80px 20px 0;
+    padding: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+.ourServices_div>h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+.services:hover{
+    background-color: black;
+    color: white;
+    transition-delay: 0.3s;
+}
+.services h1{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 61px;
+}
+.services p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+}
+@media screen and (min-width:1290px) and (max-width:1410px){
+    /* --------------Our Services Section----------------- */
+    .ourServices_div>h1, .aboutUs_text h1{
+        font-size: 50px;
+    }
+    .services_div .services h1{
+       font-size: 25px;
+    }
+    .services_div .services p, .aboutUs_text p{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:1110px) and (max-width:1290px){
+    /* --------------Our Services Section----------------- */
+    .ourServices_div>h1, .aboutUs_text h1{
+        font-size: 40px;
+    }
+    .services_div .services h1{
+       font-size: 22px;
+    }
+    .services_div .services p, .aboutUs_text p{
+        font-size: 17px;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1110px){
+    /* --------------Our Services Section----------------- */
+    .ourServices_div{
+        margin: 100px 70px;
+    }
+    .ourServices_div>h1, .aboutUs_text h1{
+        font-size: 35px;
+    }
+    .services_div .services h1{
+       font-size: 20px;
+    }
+    .services_div .services p, .aboutUs_text p{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:960px){
+    /* --------------Our Services Section----------------- */
+    .ourServices_div{
+        margin: 50px 50px;
+    }
+    .ourServices_div>h1, .aboutUs_text h1{
+        font-size: 30px;
+    }
+    .services_div .services h1{
+       font-size: 18px;
+    }
+    .services_div .services p, .aboutUs_text p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:768px){
+    /* --------------Our Services Section----------------- */
+    .ourServices_div{
+        margin: 50px 50px;
+    }
+    .ourServices_div>h1, .aboutUs_text h1{
+        font-size: 26px;
+    }
+    .services_div .services h1{
+       font-size: 17px;
+    }
+    .services_div .services p, .aboutUs_text p{
+        font-size: 14px;
+    }
+}
