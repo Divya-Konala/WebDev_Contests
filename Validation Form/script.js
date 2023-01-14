@@ -23,13 +23,13 @@ function createEmployee(e) {
   let empName = document.getElementById("name").value;
   let empProf = document.getElementById("profession").value;
   let empAge = document.getElementById("age").value;
-  let newEmp = {
-    id: ++idGenerator,
-    name: empName,
-    profession: empProf,
-    age: empAge,
-  };
   if (empName.length > 0 && empProf.length > 0 && empAge.length > 0) {
+    let newEmp = {
+        id: ++idGenerator,
+        name: empName,
+        profession: empProf,
+        age: empAge,
+      };
     let success = document.querySelector("#msg");
     success.innerHTML = "Success: Employee Added!";
     success.style.color = "green";
