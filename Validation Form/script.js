@@ -3,7 +3,7 @@ let form = document
   .addEventListener("submit", createEmployee);
 let addUserBtn = document.getElementById("addUser");
 let tableBody = document.querySelector("tbody");
-let tableHead = document.querySelector("thead");
+let tableFoot = document.querySelector("tfoot");
 let idGenerator = 0;
 
 let empArr = [];
@@ -11,9 +11,9 @@ let empArr = [];
 function isTableEmpty() {
   let noOfObjects = tableBody.querySelectorAll("tr").length;
   if (noOfObjects == 0) {
-    tableHead.innerText = "You have 0 Employees";
+    tableFoot.innerText = "You have 0 Employees";
   } else {
-    tableHead.innerText = "";
+    tableFoot.innerText = "";
   }
 }
 isTableEmpty();
@@ -61,7 +61,7 @@ function getEmployees(empArr) {
     let delButton = document.createElement("button");
     delButton.textContent = "Delete User";
     td5.append(delButton);
-    td5.addEventListener("click", function () {
+    delButton.addEventListener("click", function () {
       deleteEmployee(element, index);
     });
     row.append(td1, td2, td3, td4, td5);
