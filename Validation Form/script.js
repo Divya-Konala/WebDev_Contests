@@ -4,7 +4,6 @@ let form = document
 let addUserBtn = document.getElementById("addUser");
 let tableBody = document.querySelector("tbody");
 let tableHead = document.querySelector("thead");
-let delBtns = tableBody.getElementsByTagName("button");
 let idGenerator = 0;
 
 let empArr = [];
