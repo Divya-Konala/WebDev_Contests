@@ -1,0 +1,94 @@
+body {
+  font-family: "Sedgwick Ave Display", cursive;
+  margin: 0px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.top-bar {
+  position: fixed;
+  background-color: black;
+  color:  #FF8E9E;
+  width: 100vw;
+  z-index: 150;
+  /* border: 1px solid black; */
+  display: flex;
+  /* gap: 30px; */
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 24px;
+  padding: 10px 0;
+}
+.top-bar a {
+  text-decoration: none;
+  color: #FF8E9E;
+}
+.start-screen {
+  position: absolute;
+  left: 35%;
+  z-index: 50;
+  width: 30vw;
+  /* border: 1px solid black; */
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.start-screen button {
+  background-color: green;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-family: "Sedgwick Ave Display", cursive;
+}
+.hide {
+  display: none !important;
+}
+.makeOpaque {
+  opacity: 0.4 !important;
+}
+.game-area {
+  display: flex;
+  justify-content: center;
+  height: 92vh;
+}
+.road {
+  margin-top: 53px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  border: 1px solid black;
+  background-color: black;
+  width: 30vw;
+  height: 92vh;
+  padding: 0 5px;
+}
+.car,
+.enemyCar {
+  position: absolute;
+  z-index: 100;
+  width: 50px;
+  height: 100px;
+  background: url("./car2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+#playerCar {
+  background-color: white !important;
+  position: absolute;
+  bottom: 0px;
+  left: 40%;
+}
+.line {
+  position: absolute;
+  height: 50px;
+  width: 10px;
+  background-color: yellow;
+}

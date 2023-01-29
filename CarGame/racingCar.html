@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Racing Car</title>
+    <link rel="stylesheet" href="./racingCar.css">
+  </head>
+  <body>
+    <div class="top-bar">
+      <div>Name: <span class="name"></span></div>
+      <div>Score: <span class="score">0</span></div>
+      <div>Highest Score: <span class="highScore">0</span></div>
+      <a href="./leaderboard.html">Leader Board</a>
+    </div>
+    <div class="gameScreen">
+      <div class="start-screen">
+        <h1>RACING CAR</h1>
+        <button class="startGameBtn">click here to START GAME</button> <br />
+        <span id="instructions">Use Arrow Keys To Move Your Car</span>
+      </div>
+      <div class="game-area makeOpaque">
+        <div class="road"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./racingCar.js"></script>
+</html>

@@ -11,25 +11,28 @@
     <div class="form_div">
       <h1>New Employees</h1>
       <form id="form" action="">
-        <div class="formBox">
-          <div class="inputBox">
-            <label for="name">Enter Name</label>
-            <input id="name" type="text" />
+        <fieldset>
+            <legend><h2>Add Employees</h2></legend>
+          <div class="formBox">
+            <div class="inputBox">
+              <label for="name">Enter Name</label>
+              <input id="name" type="text" />
+            </div>
+            <div class="inputBox">
+              <label for="profession">Enter Profession</label>
+              <input id="profession" type="text" />
+            </div>
+            <div class="inputBox">
+              <label for="age">Enter Age</label>
+              <input id="age" type="number" />
+            </div>
           </div>
-          <div class="inputBox">
-            <label for="profession">Enter Profession</label>
-            <input id="profession" type="text" />
-          </div>
-          <div class="inputBox">
-            <label for="age">Enter Age</label>
-            <input id="age" type="number" />
-          </div>
-        </div>
-        <button id="addUser" type="submit">Add User</button>
+          <button id="addUser" type="submit">Add User</button>
+        </fieldset>
       </form>
     </div>
     <div id="msg">
-
+      
     </div>
     <div class="objects_div">
         <h1>Added Employees</h1>

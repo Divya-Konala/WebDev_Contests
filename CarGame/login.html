@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      body {
+        margin: 30px;
+        background-color: black;
+        color: white;
+        font-family: "Sedgwick Ave Display", cursive;
+      }
+      .heading{
+        color:  #FF8E9E;
+        font-weight: bold;
+        text-align: center;
+      }
+      form{
+        text-align: center;
+        padding: 40px 0px 80px;
+      }
+      body input {
+        font-family: "Sedgwick Ave Display", cursive;
+        background-color: black;
+        color:  #FF8E9E;
+        font-size: 24px;
+        font-weight: 300;
+        margin: 10px 0px;
+        border: none;
+        border-bottom: 1px solid white;
+      }
+      body button {
+        font-family: "Sedgwick Ave Display", cursive;
+        width: 120px;
+        height: 40px;
+        font-size: 24px;
+      }
+      body p {
+        font-size: 18px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">CAR GAME</h1>
+    <fieldset>
+      <legend><h1>Login</h1></legend>
+      <form>
+        <input id="email" type="email" placeholder="email ID" />
+        <br />
+        <input id="password" type="password" placeholder="password" />
+        <br />
+        <button type="submit">Login</button>
+        <p class="msg"></p>
+      </form>
+    </fieldset>
+
+  </body>
+  <script src="./login.js"></script>
+</html>
