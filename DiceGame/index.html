@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>DiceGame</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1 class="heading">TRY YOUR LUCK</h1>
+      <div class="instructions">
+        Please follow the steps to play the game:
+        <ol>
+          <li>Click the first image to register yourself</li>
+          <li>Click the second image to get user details</li>
+          <li>
+            click the third image to play the game
+            <ul>
+              <li>Player will be given two attempts to clear the game</li>
+              <li>
+                In each attempt player will be given three chances to roll the
+                dice
+              </li>
+              <li>
+                In atleast one attempt the player must score greater than 10 points
+              </li>
+            </ul>
+          </li>
+          <li>click on the fourth image to generate coupon code</li>
+        </ol>
+      </div>
+      <div class="imagesdiv">
+        <img
+          class="iconsimages"
+          id="first-image"
+          src="https://icon-library.com/images/register-icon-free/register-icon-free-16.jpg"
+          alt="Firstimage"
+        />
+        <img
+          class="iconsimages"
+          id="second-image"
+          src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+          alt="secondimage"
+        />
+        <img
+          class="iconsimages"
+          id="third-image"
+          src="https://cdn-icons-png.flaticon.com/512/229/229800.png"
+          alt="thirdimage"
+        />
+        <img
+          class="iconsimages"
+          id="fourth-image"
+          src="https://cdn.iconscout.com/icon/free/png-256/ticket-1855957-1574163.png"
+          alt="fourthimage"
+        />
+      </div>
+    </header>
+    <h2 id="msg"></h2>
+    <main></main>
+  </body>
+  <script src="./script.js"></script>
+</html>
