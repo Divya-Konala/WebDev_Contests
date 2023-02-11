@@ -1,7 +1,10 @@
+/* ----------body------------- */
 body{
     font-family:"DM Sans";
     margin: 0px;
 }
+
+/* ---------navbar----------- */
 nav{
     background-color: black;
     display: flex;
@@ -18,12 +21,16 @@ nav a{
     display: flex;
     gap: 30px;
 }
+
+/* -------------header------------- */
 header>h1{
     font-size: 64px;
     font-weight: 700;
     text-align: center;
     margin: 0px;
 }
+
+/* ------------------main------------------- */
 #productsGallery{
     display: flex;
     flex-wrap: wrap;
