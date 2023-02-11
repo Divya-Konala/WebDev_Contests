@@ -1,0 +1,57 @@
+body{
+    font-family:"DM Sans";
+    margin: 0px;
+}
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 1% 2%;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    display: flex;
+    gap: 30px;
+}
+header>h1{
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px;
+}
+#productsGallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    font-size: 20px;
+}
+.prodBox{
+    /* border: 1px solid black; */
+    box-shadow: rgba(4, 4, 147, 0.25) 0px 50px 100px -20px, rgba(20, 4, 160, 0.3) 0px 30px 60px -30px, rgba(3, 58, 112, 0.35) 0px -2px 6px 0px inset;
+    width: 20%;
+    /* height: 400px; */
+}
+.prodBox img{
+    width: 100%;
+    height: 200px;
+    /* border-radius: 10px; */
+    /* border: 1px solid black; */
+}
+.prodBox p{
+    margin-left: 10px;
+}
+.prodBox:hover{
+    scale: 105%;
+}
+.titleBox{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
