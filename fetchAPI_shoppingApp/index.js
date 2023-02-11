@@ -43,7 +43,7 @@ let appendData = (products) =>{
 
         //price
         let price=document.createElement("p");
-        price.innerHTML=`Price: <strong>${prod.price}</strong>`;
+        price.innerHTML=`Price: <strong>${"$"}${prod.price}</strong>`;
 
         //discount
         let discount=document.createElement("p");
