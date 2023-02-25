@@ -45,7 +45,7 @@ function payOrder(order){
     foodOrder={...order};
     foodOrder.paid=true;
     return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
+        setTimeout(async()=>{
             try{
                 placeOrder(foodOrder);
             }catch(err){
