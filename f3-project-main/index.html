@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MeShop</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-black text-white">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="./index.html"><img style="background-color: white;border-radius: 100%;"src="https://img.icons8.com/ios-filled/40/000000/shopaholic.png"/> Me Shop</a>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a class="restricted nav-after nav-link" href="./profile/index.html">My Profile</a>
+          <a class="nav-after nav-link" href="./login/index.html">Login</a>
+          <a class="nav-after nav-link" href="./signup/index.html">Signup</a>
+          <a class="restricted nav-after nav-link" href="./shop/index.html">Shop</a>
+          <a class="restricted nav-after nav-link" href="./cart/index.html">My Cart</a>
+        </div>
+      </div>
+      <div class="beforeInspect">
+        <a class="restricted nav-link" href="./profile/index.html"><i class="fa-2x fa-solid fa-address-card"></i></a>
+        <a class="nav-link" href="./login/index.html">Login</a>
+        <a class="nav-link" href="./signup/index.html">Signup</a>
+        <a class="restricted nav-link" href="./shop/index.html">Shop</a>
+        <a class="restricted nav-link" href="./cart/index.html">My Cart</a>
+      </div>
+    </nav>
+    <main>
+      <section class="left">
+        <h1><img src="https://img.icons8.com/ios-filled/40/000000/shopaholic.png">MeShop</h1>
+        <h3>A style treat for a fashionable you</h3>
+        <div class="welcomeDiv">
+          <a href="./login/index.html"><button id="login">Login</button></a>
+          <a href="./signup/index.html"><button id="signup">Signup</button></a>
+        </div>
+        <div class="item">
+          <img src="./images/shirt.png" alt="shirtImage">
+          <div class="info">
+            <div class="name">Shirt</div>
+            <div class="priceAndSize">
+              <div class="price">₹100</div>
+              <div class="sized">S,M,L</div>
+            </div>
+            <div class="row">
+                Colors:
+                <div class="circle" style="background-color: #000"></div>
+                <div class="circle" style="background-color: #4938af"></div>
+                <div class="circle" style="background-color: #203d3e"></div>
+            </div>
+            <div class="row">Rating:⭐⭐⭐</div>
+          </div>
+          <button id="addBtn">Add to Cart</button>
+        </div>
+      </section>
+      <section class="right">
+        <img src="./images/landingPagePic.png" alt="banner">
+      </section>
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./script.js"></script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeShop | Cart</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-black text-white">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="../index.html"><img style="background-color: white;border-radius: 100%;"src="https://img.icons8.com/ios-filled/40/000000/shopaholic.png"/>Me Shop</a>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a class="nav-after nav-link" href="../profile/index.html">My Profile</a>
+          <a class="nav-after nav-link" aria-current="page" href="../index.html">Home</a>
+          <a class="nav-after nav-link" href="../login/index.html">Login</a>
+          <a class="nav-after nav-link" href="../signup/index.html">Signup</a>
+          <a class="nav-after nav-link" href="../shop/index.html">Shop</a>
+        </div>
+      </div>
+      <div class="beforeInspect">
+        <a class="nav-link" href="../profile/index.html"><i class="fa-2x fa-solid fa-address-card"></i></a>
+        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+        <a class="nav-link" href="../login/index.html">Login</a>
+        <a class="nav-link" href="../signup/index.html">Signup</a>
+        <a class="nav-link" href="../shop/index.html">Shop</a>
+      </div>
+    </nav>
+    <main>
+      <h1>My Cart</h1>
+      <div class="items">
+      </div>
+      <div class="total">
+        <h1>Price Details</h1>
+        <div class="priceDetails">
+          <div class="priceRow"><span>Total MRP <span id="totalQty"></span></span><span id="totalPrice"></span></div>
+          <div class="priceRow"><span>Discount </span><span id="discount"></span></div>
+          <div class="priceRow"><span>Shipping </span><span id="shipping"></span></div>
+          <div class="pay">
+            <div>Grand Total: <strong><div id="grandTotal"></div></strong></div>
+            <button id="payBtn">Proceed to Pay</button>
+          </div>
+        </div>
+      </div>
+    </main>
+</body>
+<script src="./script.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="razorpay/script.js"></script>
+</html>

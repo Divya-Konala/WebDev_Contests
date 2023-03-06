@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+}
+/* --------------Nav------------- */
+nav {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .nav-after {
+    display: none !important;
+  }
+  .beforeInspect {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .beforeInspect a{
+    width: 70px;
+  }
+  @media screen and (max-width: 576px) {
+    .beforeInspect {
+      display: none !important;
+    }
+    .nav-after {
+      display: block !important;
+    }
+  }
+  /* ---------------Main----------- */
+  main {
+    margin: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: s center;
+  }
+  form input {
+    height: 40px;
+    font-size: 20px;
+  }
+  form button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 100px;
+  }
+  #logout{
+      margin-top: 20px;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      width: 100px;
+  }
+  p{
+      font-size: 22px;
+    }
+  #errMsg {
+    color: red;
+    margin: 0px;
+  }
+  #welcome{
+      color: blue;
+      font-weight: 500;
+    }
+  

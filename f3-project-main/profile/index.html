@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeShop | Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-black text-white">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="./index.html"><img style="background-color: white;border-radius: 100%;"src="https://img.icons8.com/ios-filled/40/000000/shopaholic.png"/> Me Shop</a>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a class="nav-after nav-link" aria-current="page" href="../index.html">Home</a>
+          <a class="nav-after nav-link" href="../login/index.html">Login</a>
+          <a class="nav-after nav-link" href="../signup/index.html">Signup</a>
+          <a class="nav-after nav-link" href="../shop/index.html">Shop</a>
+          <a class="nav-after nav-link" href="../cart/index.html">My Cart</a>
+        </div>
+      </div>
+      <div class="beforeInspect">
+        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+        <a class="nav-link" href="../login/index.html">Login</a>
+        <a class="nav-link" href="../signup/index.html">Signup</a>
+        <a class="nav-link" href="../cart/index.html">Shop</a>
+        <a class="nav-link" href="../cart/index.html">My Cart</a>
+      </div>
+    </nav>
+    <main>
+      <form>
+          <h3>MeShop Profile</h3>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="First Name"
+          required
+        />
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Last Name"
+          required
+        />
+        <input
+          type="password"
+          name="oldPwd"
+          id="oldPwd"
+          placeholder="Old Password" required
+        />
+        <input type="password" name="newPwd" id="newPwd" placeholder="New Password" required />
+        <input
+          type="password"
+          name="cnfpwd"
+          id="cnfPwd"
+          placeholder="Confirm Password" required
+        />
+        <p id="errMsg"></p>
+        <button type="submit">saveInfo</button>
+      </form>
+      <button id="logout">Logout</button>
+  </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./script.js"></script>
+</html>
