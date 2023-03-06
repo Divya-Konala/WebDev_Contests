@@ -53,6 +53,7 @@ function displayProducts() {
     document.querySelector("#discount").textContent=`₹${discount}`;
     document.querySelector("#shipping").textContent=`₹${shippingCharges}`;
     document.querySelector("#grandTotal").textContent=grandTotal;
+    localStorage.setItem("grandTotal",JSON.stringify({"totalAmount":grandTotal}));
   }
 
   displayProducts();
