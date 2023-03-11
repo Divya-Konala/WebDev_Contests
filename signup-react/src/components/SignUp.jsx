@@ -36,6 +36,9 @@ function SignUp() {
       alert("Can't submit the form");
     } else {
       alert('Form submitted successfully');
+      setFormData({email: '',
+      password: '',
+      confirmPassword: '',});
     }
   };
 
