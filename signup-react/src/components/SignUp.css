@@ -1,0 +1,33 @@
+form{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+form input{
+    width: 300px;
+    height:30px;
+    border-radius:5px;
+    font-size: medium;
+}
+form button{
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: bold;
+}
+form p{
+    margin: 0px;
+    font-weight: 400;
+}

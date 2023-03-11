@@ -46,6 +46,7 @@ function displayProducts() {
         removeFromCart(product);
       })
     });
+    totalAmount=(Math.round(totalAmount*100))/100;
     let discount=Math.round(((discountPercent*totalAmount)/100)*100)/100;
     let grandTotal=Math.round((totalAmount-discount+shippingCharges)*100)/100;
     document.querySelector("#totalQty").textContent=`(${toatalQty} items)`;
@@ -59,13 +60,13 @@ function displayProducts() {
   displayProducts();
 
   function removeFromCart(item){
-    console.log(item);
+    // console.log(item);
     let products=JSON.parse(localStorage.getItem("cartProducts"));
-    console.log(products);
+    // console.log(products);
     products=products.filter((product)=>{
         if(product.id!=item.id) return product;
     })
-    console.log(products);
+    // console.log(products);
     localStorage.setItem("cartProducts",JSON.stringify(products));
     displayProducts();
   }
