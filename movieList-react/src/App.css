@@ -1,0 +1,52 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.heading{
+  font-size: xx-large;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+/* -----------GenreFilter------------ */
+
+.GenreFilter{
+  background-color: #f5f1f1;
+  border-radius: 5px;
+  padding: 20px;
+}
+.GenreFilter h2{
+  text-align: left;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.genres{
+  display: flex;
+  gap: 10px;
+}
+
+/* -------------MovieList-------------- */
+.MovieList table{
+  margin: 20px auto;
+  width: 100%;
+}
+table,th,td{
+  border: 2px solid #bab9b9;
+  border-collapse: collapse;
+}
+th{
+  background-color: #e2e2e2;
+}
+th, td{
+  padding: 5px 10px;
+  text-align: left;
+}
+td{
+  font-weight: 500;
+}
+tr:hover{
+  background-color: #e1e1e1;
+}
+
