@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 100vw;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -24,6 +24,7 @@
 }
 .genres{
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
