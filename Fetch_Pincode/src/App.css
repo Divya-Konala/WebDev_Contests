@@ -1,0 +1,76 @@
+body {
+  height: 100vh;
+  padding: 20px 20px;
+}
+/* --------Result------------ */
+.Search{
+  display: flex;
+  flex-direction: column;
+  gap:20px
+}
+.Search input{
+  width:80%;
+  height: 30px;
+  font-size: 22px;
+  border-radius: 5px;
+}
+.Search h2{
+  margin: 0px;
+}
+.Search button{
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  width: fit-content;
+  padding: 5px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.Search #errorMsg{
+  margin: 0px;
+  color: red;
+  font-weight: 600;
+}
+.Search .Loading{
+  display: flex;
+  justify-content: center;
+}
+/* -----------Result------------- */
+.Result{
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  gap: 10px;
+}
+.Result .filteredDiv{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+.Result .filteredDiv .PostOffice{
+  /* width: 40%; */
+  font-size: 22px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.Result .searchFilter{
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  width: 95%;
+}
+.Result .searchFilter input{
+  font-size: 20px;
+  width: 100%;
+  border: none;
+}
+.Result .searchFilter input:focus{
+  outline: none;
+  border: none;
+}

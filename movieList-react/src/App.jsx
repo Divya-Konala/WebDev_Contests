@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import GenreFilter from "./components/GenreFilter";
 import MovieList from "./components/MovieList";
@@ -25,14 +25,23 @@ const movies = [
   { title: "The Lion King", genre: "Animation", year: 1994 },
 ];
 
-const genres = [ "Drama", "Crime", "Action", "Fantasy", "Western", "Science Fiction", "Thriller", "War", "Animation", ];
-
+// const genres = [ "Drama", "Crime", "Action", "Fantasy", "Western", "Science Fiction", "Thriller", "War", "Animation", ];
 
 function App() {
+  const [filterGenre,setFilterGenre]=useState("All");
+
+  const updateFilter=(genre)=>{
+    setFilterGenre(genre);
+  }
+
+  const movieFilter=()=> filterGenre==="All" 
+  ? movies 
+  : movies.filter(movie=>movie.genre===filterGenre)
+
   return <div className="App">
     <h1 className="heading">Top 15 Movies Of All Time</h1>
-    <GenreFilter props={genres}/>
-    <MovieList props={movies} />
+    <GenreFilter movies={movies} updateFilter={updateFilter}/>
+    <MovieList movies={movieFilter()} />
   </div>;
 }
 

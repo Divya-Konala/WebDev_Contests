@@ -1,6 +1,6 @@
 import React from "react";
 
-const MovieList = ({ props }) => {
+const MovieList = ({movies}) => {
   return (
     <div className="MovieList">
       <table>
@@ -12,7 +12,7 @@ const MovieList = ({ props }) => {
           </tr>
         </thead>
         <tbody>
-          {props.map((movie) => {
+          {movies.map((movie) => {
             return (
               <tr key={movie.title}>
                 <td>{movie.title}</td>

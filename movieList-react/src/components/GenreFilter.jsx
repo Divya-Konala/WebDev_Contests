@@ -1,13 +1,18 @@
 import React from 'react'
 
-const GenreFilter = ({props}) => {
+const GenreFilter = ({movies,updateFilter}) => {
+  let arr=movies.map((movies)=>movies.genre);
+  let s=new Set(arr);
+  let genres=[...s];
+  genres.unshift("All");
+
   return (
     <div className='GenreFilter'>
         <h2>Filter By Genre</h2>
         <div className="genres">
         {
-            props.map((genre)=>{
-                return <button onClick={(e)=>{console.log(`Filtering by ${e.target.name}`)}} key={genre} name={genre}>{genre}</button>
+            genres.map((genre)=>{
+                return <button onClick={()=>updateFilter(genre)} value={genre} name={genre} key={genre}>{genre}</button>
             })
         }
         </div>

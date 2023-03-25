@@ -9,7 +9,7 @@ document.getElementById("payBtn").onclick = function (e) {
   let totalAmount=grandTotal.totalAmount;
   console.log(totalAmount);
   var options = {
-    key: "rzp_test_9OXl2wK2vH03Va", // Enter the Key ID generated from the Dashboard
+    key: "rzp_test_BbO39qDrBwZejS", // Enter the Key ID generated from the Dashboard
     amount: totalAmount*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     currency: "INR",
     name: "MyShop Checkout",
@@ -21,7 +21,7 @@ document.getElementById("payBtn").onclick = function (e) {
       "https://www.mintformations.co.uk/blog/wp-content/uploads/2020/05/shutterstock_583717939.jpg",
       handler: function () {
           // Redirect the user to the shop.html page after the payment is completed
-          window.location.href = "../../shop/index.html";
+          window.location.href = "../../../f3-project-main/shop/index.html";
         },
   };
 
