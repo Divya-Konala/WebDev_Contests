@@ -1,0 +1,15 @@
+.navBar{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #242424;
+    border-bottom: 1px solid white;
+    padding: 10px 50px;
+    margin: 0px 0px 20px;
+}
+.navBar a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}

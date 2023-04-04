@@ -1,0 +1,10 @@
+.details{
+    /* margin: 0 auto; */
+    padding: 80px 50px 0px;
+    color: white;
+    width: 300px;
+}
+.details img{
+    width: 200px;
+    border-radius: 5px;
+}

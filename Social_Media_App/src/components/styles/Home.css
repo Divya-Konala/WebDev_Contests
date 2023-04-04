@@ -1,0 +1,10 @@
+.home .cardsBox{
+    padding: 100px 0px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+

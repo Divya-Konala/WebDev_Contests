@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+  top: 10%;
+  left: 23%;
+  width: 50%;
+}
+
+.text {
+  display: inline;
+  width: 100%;
+}
+
+.read-or-hide {
+  color: rgb(192, 192, 192);
+  cursor: pointer;
+}
+
+.card{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 250px;
+    /* height: fit-content; */
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.card a{
+    text-decoration: none;
+    color: white;
+}
