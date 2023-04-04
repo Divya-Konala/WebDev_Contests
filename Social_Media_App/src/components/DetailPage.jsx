@@ -26,7 +26,7 @@ const DetailPage = () => {
         <Navbar/>
         {(currentData!==undefined)
         ?<div className='details'>
-          <h3>Details Page For Post With ID {currentData.id}</h3>
+          <h4>Details Page For Post With ID {currentData.id}</h4>
           <img src={`https://picsum.photos/200?random=${currentData.id}`} alt="" />
           <p>User ID: {currentData.id}</p>
           <p>Title: {currentData.title}</p>
