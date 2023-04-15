@@ -1,6 +1,7 @@
 import { GET_DATA } from "./app.types";
 const initialState={
-    data:[]
+    data:[],
+    cart:[]
 }
 export const AppReducer=(oldstate=initialState,{type,payload})=>{
     switch(type){
