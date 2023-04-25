@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
-import ProfilePage from "./ProfilePage";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-
-const Login = () => {
+const Login = ({setIsLoggedIn}) => {
+  let navigate = useNavigate();
   const [usernameState, setUsernameState] = useState("");
   const [passwordState, setPasswordState] = useState("");
-  const [isLoggedIn,setIsLoggedIn]=useState(false);
   const [errorMsg,setErrMsg]=useState("");
 
   const handleLogin = () => {
@@ -31,17 +30,13 @@ const Login = () => {
         setIsLoggedIn(true);
           localStorage.setItem("id",data.id);
           localStorage.setItem("token",data.token);
+          navigate(`/user/${data.id}`);
       })
       .catch((error) => console.log(error));
   };
 
-  useEffect(()=>{
-    // console.log(userData);
-  })
   return (
-    <>
-    {(!isLoggedIn)
-    ?<div className="Login">
+    <div className="Login">
       <h1>Login Page</h1>
     <input
       type="text"
@@ -60,9 +55,6 @@ const Login = () => {
     </button>
     <p className="errorMessage">{errorMsg}</p>
   </div>
-    :<ProfilePage/>
-  }
-    </>
   );
 };
 

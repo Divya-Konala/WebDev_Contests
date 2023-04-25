@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
+import {useParams} from "react-router-dom"
 
 const ProfilePage = () => {
   const [userData, setUserData] = useState();
+  let params=useParams();
   useEffect(() => {
-    let id = localStorage.getItem("id");
+    // let id = localStorage.getItem("id");
+    let id=params.id;
     fetch(`https://dummyjson.com/users/${id}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setUserData(data);
       })
       .catch((error) => console.log(error.message));
@@ -137,7 +140,7 @@ const ProfilePage = () => {
             </tr>
             <tr>
               <td>WEIGHT:</td>
-              <td>{userData.weigth}</td>
+              <td>{userData.weight}</td>
             </tr>
             <tr>
               <td>HEIGHT:</td>
