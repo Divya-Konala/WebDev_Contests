@@ -1,7 +1,8 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {emptyCart} from "../redux/ActionCreators"
-const CheckOut = ({products}) => {
+const CheckOut = () => {
     const dispatch=useDispatch();
+    const products=useSelector(state=>state.cart.data);
     let total=0;
     const handleCheckout=()=>{
         alert("Your items have been checked out successfully!");

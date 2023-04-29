@@ -6,18 +6,6 @@ import {removeProductsFromCart} from "../redux/ActionCreators"
 const Cart = () => {
   const dispatch=useDispatch();
   const products=useSelector(state=>state.cart.data);
-  // const [products,setProducts]=useState([]);
-  // const [clicked,setClicked]=useState(false);
-  // const removeFromCart=async (id)=>{
-  //   setClicked(true);
-  //   const cartProducts=JSON.parse(localStorage.getItem("cart_products"));
-  //   const filteredProducts=await cartProducts.filter(item=>item.id!==id);
-  //   localStorage.setItem("cart_products",JSON.stringify(filteredProducts));
-  // }
-  // useEffect(()=>{
-  //   setProducts(JSON.parse(localStorage.getItem("cart_products"))||[]);
-  //   setClicked(false)
-  // },[clicked])
   if(products.length==0) return <h1 className="empty_cart">your cart is empty</h1>
   return (
     <div className="Cart">
@@ -38,7 +26,7 @@ const Cart = () => {
         )
       }
     </div>
-    <CheckOut products={products}/>
+    <CheckOut/>
     </div>
   )
 }
