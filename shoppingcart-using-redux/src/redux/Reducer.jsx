@@ -41,8 +41,6 @@ const cartInitialState = {
   data: JSON.parse(localStorage.getItem("cart_products"))||[]
 };
 const cartReducer = (state = cartInitialState, action) => {
-    // console.log(state.data.filter(item=>item.id==action.payload.id));
-//   console.log(state.data.indexOf(action.payload));
   switch (action.type) {
     case ADD_PRODUCTS_TO_CART: {
       if (state.data.filter(item=>item.id==action.payload.id).length==0){

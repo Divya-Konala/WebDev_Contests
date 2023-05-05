@@ -21,7 +21,7 @@ const Cart = () => {
           Price: <strong>₹{product.price}</strong>
         </p>
       </div>
-      <button className="addToCart_Btn" onClick={()=>dispatch(removeProductsFromCart(product))}>Remove From Cart</button>  
+      <button className="removeFromCart_Btn" onClick={()=>dispatch(removeProductsFromCart(product))}>Remove From Cart</button>  
         </div>
         )
       }
